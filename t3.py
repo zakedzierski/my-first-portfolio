@@ -11,13 +11,13 @@ y_pos = 0
 t.setposition(x_pos, y_pos)
 
 ### Write your code below:
-numsides = input("How many sides?")
+input_var  = int(input("Type a number: "))
 
 t.goto(0,0)
 pendown()
-for shape in range(numsides):
+for shape in range(input_var):
         forward(100)
-        left(360/numsides)
+        left(360/input_var)
 
 
 
