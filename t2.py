@@ -10,16 +10,10 @@ x_pos = 0
 y_pos = 0
 t.setposition(x_pos, y_pos)
 
-### Write your code below:
-input_var  = int(input("Type a number: "))
-
-t.goto(0,0)
-pendown()
-for shape in range(input_var):
-        forward(100)
-        left(360/input_var)
-
-
+### Write your code below
+for sides in range(4):
+    t.forward(100)
+    t.left(90)
 
 
 
